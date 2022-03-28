@@ -1,0 +1,497 @@
+*{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+html, body{
+   
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#container-body{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+    
+}
+#capa1{
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+}
+#capa2{
+    
+    display:flex;
+    flex-direction: column;
+   
+    justify-content: flex-end;
+   
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid red; */
+    background-image: url(fondo1.jpg) ;
+    
+}
+#capa2 header{
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    line-height: 3.5rem;
+    /* border: 1px solid red; */
+}
+#left{
+  
+    display: flex;
+    flex-flow: row;
+    width: 70%;
+    /* border: 1px solid red; */
+
+} 
+#left span{
+    color: aliceblue;
+    line-height: 2rem;
+}
+#rigth{
+    width: 30%;
+    /* border: 1px solid red; */
+}
+#left div{
+    
+    width: 4rem;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid rgb(182, 175, 175); */
+}
+#chatimg{
+    margin: 2px;
+    background-image: url(culma.jpeg);
+    background-size: cover;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 3rem;
+    /* border: 1px solid rgb(47, 0, 255); */
+}
+#rigth {
+   display: flex;
+   flex-direction: row;
+    justify-content: flex-end;
+    line-height: 1rem;
+    
+}
+#rigth span{
+    width: 3rem;
+    /* border: 1px solid red; */
+    line-height: 3rem;
+}
+#chatculma{
+   
+   
+    flex: 1;
+    overflow-y: scroll;
+    /* border: 1px solid rgb(255, 238, 0); */
+}
+#cont-chatculma{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+#hora{
+    display: flex ;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+#cont-chatculma small{
+    display: flex;
+    flex-flow: row;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    /* border: 1px solid red; */
+    
+    height: 1.5rem;
+}
+.capmen2{
+    display: flex;
+
+}
+.capmen1{
+    display: flex;
+    justify-content: flex-end;
+}
+#mensajes{
+    padding: 0.5rem;
+}
+.mensaje1{
+   
+    /* border: 1px solid rgb(255, 72, 0); */
+    width:max-content;
+    height: max-content;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 0.7rem;
+    background-color: rgb(34, 122, 94);
+}
+.mensaje2{
+    
+    width:max-content;
+    height: max-content;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(52, 67, 73);
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+    /* border: 1px solid rgb(255, 238, 0); */
+}
+
+#capa2 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 2.5rem;
+    padding: 0.2rem;
+    /* border: 1px solid white; */
+}
+#capa2 footer #captext{
+    display: flex;
+    flex-direction: row;
+    /* margin: 0.2rem; */
+    padding: 0.3rem;
+    line-height: rem;
+    border-radius: 2rem;
+    background-color: rgb(17, 97, 97);
+    width: calc(99% - 2rem);
+}
+#captext input{
+    background-color: transparent;
+    border: 0px;
+    color: aliceblue;
+    width: 94%;
+}
+#mic{
+    background-color: rgb(27, 167, 120);
+    height: 2rem;
+    width: 2rem;
+    margin: 2px;
+    border-radius: 2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+nav{
+    /* position: fixed; */
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(58, 129, 120);
+    color: rgb(198, 202, 198);
+    width: 100vw;
+    height: 2rem;
+
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: rgb(58, 129, 120);
+    color: rgb(198, 202, 198);
+}
+#title{
+    position: absolute;
+    right: 0;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+#title button{
+    width: 5%;
+    background-color: transparent;
+    border: none;
+    color: rgb(198, 202, 198);
+}
+
+
+#naving{
+    
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    /* border: 1px solid red; */
+    line-height: 200%;
+    color: rgb(198, 202, 198);
+}
+
+.opcion, a{
+    text-align: center;
+    width: 30%;
+    font-size: 1rem;
+    color: rgb(198, 202, 198);
+    border: none;
+
+}
+#camera{
+    width: 10%;
+}
+
+#chats{
+    color: rgb(130, 235, 139);
+    border-bottom: 2px solid rgb(77, 167, 82) ;
+}
+main{
+    width: 100%;
+    height: calc(100% - 5rem);
+    overflow-x: scroll;
+    
+}
+#container-main{
+    position: relative;
+    display: flex;
+    width: 400%;
+    background-color: rgb(61, 83, 83);
+    height: 100%;
+   
+    /* border: 3px solid yellow; */
+}
+
+#camara{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 3rem;
+    justify-content: end;
+}
+#photos{
+    position: absolute;
+    bottom: 6rem;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 6rem;
+    overflow-x: scroll;
+}
+#con-photos{
+    /* border: 1px solid blue; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+   
+}
+#photos article{
+    background-color: black;
+    margin: 1px;
+    width: 6rem;
+    height: 6rem;
+    /* border: 1px solid red; */
+}
+#camara footer{
+    font-size: 3rem;
+  display: flex;
+  flex-flow: row;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+   height: 6rem;
+   justify-content: center;
+    /* border: 2px solid rgb(255, 251, 0); */
+}
+#flash{
+    line-height: 6rem;
+    font-size: 3rem;
+    height: 6rem;
+    width: 6rem;
+    /* border: 1px solid red; */
+    border-radius: 6rem;
+}
+#boton{
+    height: 6rem;
+    width: 6rem;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 6rem;
+}
+#change-cam{
+    font-size: 3rem;
+    line-height: 6rem;
+    height: 6rem;
+    width: 6rem;
+    /* border: 1px solid red; */
+    border-radius: 6rem;
+}
+#bandeja{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    overflow-y: scroll;
+    /* border: 1px solid rgb(255, 81, 0); */
+    
+    
+}
+article{
+    display: flex;
+    flex-flow: row;
+    /* padding: 1%; */
+    height: 4rem;
+    /* border: 1px solid blue; */
+    margin: 1rem;
+}
+
+
+.img{
+    display: flex;
+
+    
+    background-size: cover;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 4rem;
+    
+}
+#img0{
+    background-image:url(yerlinda.jpg) ;
+}
+#img1{
+    background-image: url(dopamina.jpg);
+}
+#img2{
+    background-image: url(edwin.jpg);
+}
+#img3{
+    background-image: url(mama.jpg);
+}
+#img4{
+    background-image: url(iadsi.jpg);
+}
+#img5{
+    background-image: url(oscar\ hermano.jpg);
+}
+#img6{
+    background-image: url(andres.jpg);
+}
+#img7{
+    background-image: url(culma.jpeg);
+}
+#data{
+    padding: 1%;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    color: white;
+   /* border: 1px solid rgb(255, 0, 0); */
+}
+#data span {
+    /* border: 1px solid rgb(255, 0, 0); */
+    height: 50%;
+}
+#name{
+ height: 50%;
+ font-size: 1.5rem;
+ line-height: 10%;
+}
+.material-icons{
+    text-align: center;
+    color: rgb(186, 187, 189);
+}
+#data div{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#footer{
+    flex: 0.06;
+    /* border: 1px solid rgb(255, 0, 0); */
+    color: rgb(213, 215, 218);
+    text-align: center;
+    font-size: 1rem;
+    
+}
+#footer  #other{
+    text-align: right;
+    line-height: 200%;
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+#newchat{
+    position:absolute;
+    bottom: 2rem;
+    right:  1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    background-color: azure;
+    text-align: center;
+    line-height: 4rem;
+    font-size: medium;
+    color: rgb(19, 29, 26);
+    box-shadow: inset;
+}
+#newstade{
+    position:absolute;
+    bottom: 2rem;
+    right:  1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    background-color: rgb(48, 206, 132);
+    text-align: center;
+    line-height: 4rem;
+    font-size: medium;
+    color: rgb(19, 29, 26);
+    box-shadow: inset;
+}
+#newtext{
+    position:absolute;
+    bottom: 6rem;
+    right:  1.3rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    background-color: azure;
+    text-align: center;
+    line-height: 3rem;
+    font-size:small;
+    
+    box-shadow: inset;
+}
+#estados{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll; overflow-y: scroll;
+    /* border: 2px solid rgb(255, 174, 0); */
+    
+}
+#estados small{
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+#llamadas{
+    display: flex;
+    flex-flow: column;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* border: 1px solid rgb(250, 250, 250); */
+}
